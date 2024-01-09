@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:sans-serif;
+  font-family: 'Salsa', cursive;
   scroll-behavior: smooth;
 }
 
@@ -106,7 +108,7 @@ svg circle{
   opacity: 0;
   animation: slideRight 0.5s ease forwards; 
   animation-delay: 1s;
-  color:rgb(193, 16, 149)
+  color:aliceblue;
 }
 
 
@@ -115,7 +117,7 @@ svg circle{
   opacity: 0;
   animation: slideLeft 0.5s ease forwards; 
   animation-delay: 1s;
-  color:rgb(117, 151, 124);
+  color:aliceblue;
 }
 
 .services-list
@@ -349,7 +351,8 @@ section{
   height: 500px;
   padding: 0px 90px;
   margin-left: 120px;
-  
+  margin-bottom: 20%;  
+  padding-bottom: 12%;
 }
 
 
@@ -395,7 +398,7 @@ section{
 }
 
 .Technical-bars .bar .progess-line{
-  position: relative;
+  /* position: relative; */
   z-index: 100;
   border-radius: 16px;
   width:100%;
@@ -1099,5 +1102,14 @@ button{
     padding-top: 3%;
     padding-bottom: 30%;
     margin-bottom: 12%;
+  }
+
+
+  .contact-form{
+    padding-bottom: 60%;
+  }
+
+  .about{
+    padding-bottom:15%;
   }
 } 
