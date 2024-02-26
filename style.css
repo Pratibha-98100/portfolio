@@ -190,6 +190,8 @@ svg circle{
   gap:1.5rem;
   height: 100%;
   margin-top: 6%; 
+  max-width: 100%;
+  margin-bottom: 10%;
 }
 
 .about-img img{
@@ -475,6 +477,7 @@ section{
 
 /* ---------------------professional ------------------------ */
 
+
 .radial-bars{
   width:100%;
   display: flex;
@@ -583,7 +586,7 @@ section{
 /* -----------------------------------------------projects------------------------------------------------ */
 
 .main-text{
-  padding-top: 129px;
+  padding-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -690,6 +693,7 @@ section{
   gap:3rem;
   padding-left: 30px;
   margin-top: 130px;
+  margin-bottom: 9%;
 }
 
 
@@ -930,56 +934,82 @@ button{
 
 
   .logo{
-    font-size: small;
+    font-size: 21px;
   }
 
   .navbar a {
       margin-left: 10px;
-      font-size: small;
+      font-size: 21px;
   }
 
-  .home {
-      padding: 30px 5% 0;
+  .home .home-content{
+      padding-top: 16% ;
+      margin-left: 30%;
+      /* text-align: center; */
   }
+
    
   .home-content h3,h1{
-    font-size: 21px;
+    font-size: 15px;
   }
 
-  .home-content p {
-    font-size: 12px;
-  }
+
   .my {
-      height: 30%;
-      width: 30%;
+    float: none; 
+    width: 60%; 
+    margin-left: 9%; 
+    margin-top: 10%;
+    margin-bottom: 10%; 
+   }
+
+
+  .home {
+    padding: 30px 5% 0; 
+    flex-direction: column; 
+    align-items: stretch; 
+    height: fit-content;
+    text-align: center;
+
+  }
+
+  .home-content {
+    padding-top: 30px;
+    width:100% ;
+  }
+
+  .home-content h3,
+  .home-content h1,
+  .home-content p {
+    font-size: 24px; 
+    opacity: 1; 
+    width:100%;
   }
 
   .home-sci a {
-      width: 25px;
-      height: 25px;
-      font-size: 12px;
+    margin: 15px 10px 15px 0; 
+    opacity: 1;
   }
 
   .btn-box {
-      font-size: 12px;
-      padding: 8px 15px;
+    margin-top: 20px; 
+    opacity: 1; 
   }
-
-
-
 
   /* ------------------------------about------------------------------ */
 
   .about {
     grid-template-columns: 1fr;
-    margin-top: 10%;
+    margin-top: 30%;
     padding-bottom:30%;
+    margin-left: 30%;
+    width:100%;
+    text-align: center;
   }
 
   .about-img img {
-      margin-right: 12px;
-      width: 60%; /* Adjust the width as needed */
-      /* margin: 0 auto; Center the image */
+      margin-left: 12px;
+      width: 30%; /* Adjust the width as needed */
+      margin: 0 auto; 
   }
 
   .about-text {
@@ -997,8 +1027,10 @@ button{
 
   .about-text p {
     font-size: 16px;
-      margin-right: 0;
+      /* margin-left: 30%; */
       padding-bottom: 21px;
+      text-align: center;
+      width:100%
   }
 
 
@@ -1013,13 +1045,17 @@ button{
   .sub-title {
     font-size: 40px;
     padding-bottom: 40px;
+    margin-top: 0%;
+    padding-top: 70px;
+    margin-left: 60%;
+    text-align: center;
   }
 
   .container1 {
     width: 100%;
     height: auto;
     padding: 0 20px;
-    margin-left: 0;
+    margin-left: 30% !important;
     padding-bottom:30%;
   }
 
@@ -1052,12 +1088,82 @@ button{
   }
 
 
+  /* ----------------project------------- */
+  .project .main-text h2{
+    font-size: 56px ;
+    text-align: center;
+    margin-left: 21%;
+    width:100%
+  }
+
+  /* -----------contact---------------- */
+   .contact .contact-icons{
+    padding-bottom: 10%;
+   }
 }
 
 
 
 
 @media screen and (max-width: 1368px ) {
+
+
+  /* --------------------home------------------- */
+  .logo{
+    margin-left: 0;
+  }
+
+  .logo, .navbar a{
+    font-size: 21px;
+  }
+  
+  .home, .home-content{
+    margin-top: 0;
+    padding-top:0%;
+    padding-bottom: 15%;
+  }
+
+
+
+
+  /* --------------------------------about-------------------------- */
+
+  .about {
+    margin-top: 0%;
+    padding-top: 0%;
+    width:100%;
+    text-align: center;
+  }
+
+  .about-img img {
+      margin-left: 0px;
+      width: 56%;
+  }
+
+  .about-text {
+      text-align: center;
+  }
+
+  .about-text h2 {
+      font-size: 40px;
+  }
+
+  .about-text h4 {
+      font-size: 24px;
+      margin: 15px 0 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+      /* margin-left: 30%; */
+      padding-bottom: 21px;
+      text-align: center;
+      width:100%
+  }
+
+
+
+
   .container1 {
       width: 100%;
       padding: px 20px;
